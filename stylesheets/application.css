@@ -462,7 +462,6 @@ table.progress tr td.closed{
 
 #content  > .contextual{ 
 	font-size: 0.9em; 
-	font-family:verdana;
 	-moz-border-radius-bottomleft:0;
 	-moz-border-radius-bottomright:0;
 	-moz-border-radius-topleft:5px;
@@ -479,24 +478,13 @@ table.progress tr td.closed{
 	float: right;
 	font-family: verdana;
 	font-size: 0.9em;
-	margin: 3px 0 0 0;
-	position: relative;
-	z-index: 2;
 	padding: 0;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
-#content > .contextual > *{ margin-left: -15px; margin-right: 15px }
-#content > .contextual > *:first-child{ margin-left: 15px; }
-
-#content div[style="clear: both;"] + .contextual{ 
-	border: none;
-}
-
-#content .breadcrumb + .contextual{
-	 margin-top: 6px;
-}
-
-#content > .contextual > a, #content > .contextual > #watcher > a{ 
+#content > .contextual > a, #content > .contextual > #watcher > a {
 	line-height: 35px; 
 	padding-top: 10px;
 	padding-bottom: 11px;
