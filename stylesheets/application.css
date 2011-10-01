@@ -31,7 +31,7 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 
 #header{
 	background: #E1E1E1;
-	font-size:11px;
+	font-size: 11px;
 	width: 220px !important;
 	height: auto !important;
 	float: left;
@@ -39,11 +39,17 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 	padding-bottom: 40px;
 	min-height: 600px;
 }
-#header h1 { 
+#header h1 {
+    font-size: 18px;
 	font-weight:bold;
 	padding: 0 !important;
 	margin: 0 !important;
 	margin-top: 10px !important;
+}
+#header h1 a, #header h1 a:hover { 
+    color: #606162;
+    display: block;
+    text-align: center;
 }
 #header #quick-search { 
 	text-align: right;
