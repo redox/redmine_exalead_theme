@@ -108,7 +108,7 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 }
 #main { 
     background: none !important;
-	margin: 10px 200px 20px 250px;
+	margin: 10px 230px 20px 250px;
 	position: relative;
 }
 #content {
@@ -126,9 +126,9 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 }
 
 #sidebar {
-    width: 150px !important;
+    width: 180px !important;
     background: #E1E1E1;
-    margin-right: -200px;
+    margin-right: -230px;
     margin-top: -10px;
     padding-bottom: 40px;
     min-height: 600px;
