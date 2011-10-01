@@ -7,7 +7,7 @@
 @import url(/assets/application.css);
 
 body{
-	background: #F3F3F3 url(../images/bg-body.png) repeat-y scroll left top;
+	background: white;
 	font-family:"Lucida Grande", verdana, arial, helvetica, sans-serif;
 	color: #555555;
 }
@@ -29,41 +29,32 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 }
 
 #header{
-	background:transparent;
-	color:#888888;
+	background: #E1E1E1;
 	font-size:11px;
-	left: 0;
-	padding: 0 0 0 9px;
-	position:absolute;
-	top:37px;
-	width:221px;
+	width: 221px;
+	height: auto !important;
+	float: left;
+	color: #606162;
+	padding-bottom: 40px;
+	min-height: 600px;
 }
 #header h1 { 
-	color:#CCCCCC; 
-	font-family: Calibri,Helvetica,Arial,sans-serif; 
-	font-weight:bold; 
-	margin: 0 0 0 15px; 
-	position: relative;
-	text-align:right;
-	top: 65px;
-	width:191px;
-	z-index: 50;
+	font-weight:bold;
+	padding: 0 !important;
+	margin: 0 !important;
+	margin-top: 10px !important;
 }
 #header #quick-search { 
-	font-family: Arial,Helvetica,sans-serif;
-	line-height: 30px;
-	margin:0; 
-	padding:0 15px 20px;
-	position: relative; 
 	text-align: right;
-	top: 77px; 
-	z-index: 60; 
+	margin-top: 10px;
+	margin-right: 10px;
+	float: none !important;
 }
 #header #quick-search input[type="text"], select { 
 	font-size: 11px;
 }
 #header #quick-search a{ 
-	color:#CCCCCC; 
+	color: #606162;
 }
 #header #quick-search a:hover{ 
 	color: #fff; 
@@ -80,14 +71,20 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 	width: 120px; 
 }
 #top-menu { 
-	background: #0071BC url(../images/pc-bg.png) repeat-x 0 bottom ; 
-	font-size: 11px;
-	height: 30px;
+	background: url(../images/menu_top_bg.png) 0 0 repeat-x;
+    height: 40px; 
 	padding: 0; 
 	position: relative; 
 }
 #top-menu ul { 
 	padding: 0 21px; 
+	padding-left: 150px !important;
+	background: url(../images/logo.png) top left no-repeat;
+	height: 40px;
+}
+#top-menu #account ul {
+	padding-left: 0px !important;
+	background: none;
 }
 #top-menu li{ 
 	background: none;
@@ -106,31 +103,10 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 }
 #top-menu #loggedas{
 	color: #888;
-	font-family: Arial,Helvetica,sans-serif;
-	height: 30px;
-	line-height:1.5em;
-	margin: 0;
-	padding:0 15px 0 24px;
-	overflow: hidden;
-	position:absolute;
-	text-align:right;
-	top:80px;
-	width: 191px;
-	z-index:999;
-}
-#top-menu #loggedas a{ 
-	color: #ccc; 
-	font-weight: normal; 
-	margin: 0;
-}
-#top-menu #loggedas a:hover{ 
-	color: #fff; 
-	text-decoration: none; 
+	margin-top: 10px;
 }
 #main { 
-	background: none; 
-	margin:0 30px 0 260px; 
-	padding: 40px 0 0 0; 
+	margin: 10px 10px 0px 250px;
 }
 #content {
 	background:#FFFFFF none repeat scroll 0 0;
@@ -149,17 +125,11 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 	width: 15%; 
 }
 #footer { 
-	background-color:#EEEEEE; 
-	border-top: 1px solid #CCCCCC; 
-	bottom: -20px;
-	clear: left; 
+	border: none !important;
 	color:#666666; 
 	font-size:9px; 
 	left: 255px;
-	margin-right: 295px;
-	padding: 15px 0; 
-	position: relative;
-	text-align:left; 
+	padding: 0px
 }
 #footer a, #footer a:link, #footer a:visited { 
 	color: #0071BC 
@@ -169,7 +139,7 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 	text-decoration: none;
 }
 #footer .bgr:after {
-	content: "| Theme by Pixel Cookers"; 
+	content: "| Sylvain Utard"; 
 }
 
 /* Headers */
