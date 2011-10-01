@@ -10,6 +10,7 @@ body{
 	background: white;
 	font-family:"Lucida Grande", verdana, arial, helvetica, sans-serif;
 	color: #555555;
+	min-width: 1200px;
 }
 #wrapper{
 	background: transparent;
@@ -31,7 +32,7 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 #header{
 	background: #E1E1E1;
 	font-size:11px;
-	width: 221px;
+	width: 220px !important;
 	height: auto !important;
 	float: left;
 	color: #606162;
@@ -107,13 +108,14 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 }
 #main { 
     background: none !important;
-	margin: 10px 10px 20px 250px;
+	margin: 10px 200px 20px 250px;
+	position: relative;
 }
 #content {
 	border: 1px solid #CCCCCC;
 	border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px;
-	width: auto !important;
-	margin-right: 210px;
+	width: 100% !important;
+	float: left;
 }
 #main.nosidebar #content {
 	border: 1px solid #CCCCCC;
@@ -124,13 +126,14 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 }
 
 #sidebar {
-    width: 200px !important;
+    width: 150px !important;
     background: #E1E1E1;
-    margin-right: -10px;
+    margin-right: -200px;
     margin-top: -10px;
     padding-bottom: 40px;
     min-height: 600px;
     padding-left: 10px;
+    float: right;
 }
 
 #sidebar h3 {
