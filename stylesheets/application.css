@@ -32,7 +32,7 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 #header{
 	background: #E1E1E1;
 	font-size: 11px;
-	width: 150px !important;
+	width: 210px !important;
 	height: auto !important;
 	float: left;
 	color: #606162;
@@ -116,7 +116,7 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 }
 #main { 
     background: none !important;
-	margin: 10px 230px 20px 160px;
+	margin: 10px 230px 20px 230px;
 	position: relative;
 }
 #content {
