@@ -32,10 +32,11 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 #header{
 	background: #E1E1E1;
 	font-size: 11px;
-	width: 220px !important;
+	width: 150px !important;
 	height: auto !important;
 	float: left;
 	color: #606162;
+	padding: 0px;
 	padding-bottom: 40px;
 	min-height: 600px;
 }
@@ -45,6 +46,7 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 	padding: 0 !important;
 	margin: 0 !important;
 	margin-top: 10px !important;
+	padding-left: 10px !important;
 }
 #header h1 a, #header h1 a:hover { 
     color: #606162;
@@ -114,7 +116,7 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 }
 #main { 
     background: none !important;
-	margin: 10px 230px 20px 250px;
+	margin: 10px 230px 20px 160px;
 	position: relative;
 }
 #content {
@@ -226,12 +228,15 @@ h3, h4 {
 
 /* Menu */
 #main-menu { 
-	margin: 20px 0 0 9px;
-	padding:0;
+    left: 0px;
+    margin: 10px 0 0 0;
+	padding: 0;
 	position: relative;
+	width: auto;
 }
-#main-menu ul{
-	width:206px;
+#main-menu ul {
+    margin: 0px !important;
+    padding: 0px !important;
 }
 #main-menu li{
 	float: none;
@@ -241,29 +246,18 @@ h3, h4 {
 	text-align:right;
 }
 #main-menu li a { 
-	background: #015ea9 url(../images/awesome-overlay-sprite.png) 0 0 repeat-x;
+    background: #A5A5A5;
 	border: none;
-	border-radius: 5px 0 0 5px; 
-	-moz-border-radius-topleft:5px; -webkit-border-top-left-radius: 5px;
-	-moz-border-radius-bottomleft:5px; -webkit-border-bottom-left-radius: 5px;
-	-moz-box-shadow: -2px 1px 2px rgba(0,0,0,0.5); -webkit-box-shadow: -2px 1px 2px rgba(0,0,0,0.5);
-	-o-box-shadow: -2px 1px 2px rgba(0,0,0,0.5); box-shadow: -2px 1px 2px rgba(0,0,0,0.5);
 	color: #fff;
 	cursor:pointer;
 	display:block;
-	font-size:14px;
-	font-weight: normal;
-	padding:10px 15px;
-	text-shadow: 0 -1px 1px rgba(0,0,0,0.25), -2px 0 1px rgba(0,0,0,0.25);
+	font-size:12px;
+	font-weight: bold;
+	padding: 5px 8px;
 	user-select: none; -moz-user-select: none;
 }
 #main-menu li a:hover { 
-	background: #015ea9 url(../images/awesome-overlay-sprite.png) 0 0 repeat-x; 
-	padding-right: 25px;
-	-webkit-transition: padding-right 200ms linear;
-	-moz-transition: padding-right 200ms linear;
-	-o-transition: padding-right 200ms linear;
-	transition: padding-right 200ms linear;
+    background: #A5A5A5 url(../images/awesome-overlay-sprite.png) 0 0 repeat-x;
 }
 #main-menu li a.selected, #main-menu li a.selected:hover { 
 	background: #f3f3f3;
@@ -720,8 +714,6 @@ a, a:link, a:visited { color: #0071BC }
 #top-menu { background-color: #0071BC}
 
 /* Buttons */
-#main-menu li a { background-color: #015EA9 }
-#main-menu li a:hover { background-color: #015EA9 }
 input[type="submit"] { background-color: #015EA9 }
 
 /* Boxes */
