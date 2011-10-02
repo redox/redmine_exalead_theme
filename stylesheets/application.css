@@ -272,8 +272,8 @@ h3, h4 {
     background: #A5A5A5 url(../images/awesome-overlay-sprite.png) 0 0 repeat-x;
 }
 #main-menu li a.selected, #main-menu li a.selected:hover { 
-	background: #f3f3f3;
-	color:#333333;
+	background: white;
+	color: #0062BC;
 	font-weight:bold;
 	text-shadow: none;
 }
