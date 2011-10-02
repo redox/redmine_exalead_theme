@@ -374,14 +374,6 @@ textarea.wiki-edit { font-family: Arial, Verdana, Serif; font-size: larger; back
     border-color: #72B9E8;
 }
 
-#content .splitcontentright .projects.box > ul{
-	margin-left: 0;
-	padding-left: 0;
-}
-#content .splitcontentright .projects.box > ul > li{
-	padding-left: 0;
-	background: none;
-}
 #content .splitcontentright .projects.box > ul > li:first-line, 
 #content .splitcontentleft .news.box  p > a + a,
 #content .splitcontentright .news.box p > a {
@@ -394,22 +386,6 @@ textarea.wiki-edit { font-family: Arial, Verdana, Serif; font-size: larger; back
 	font-weight: normal;
 }
 
-ul{ margin-left: 20px; padding-left: 0; }
-ul li{
-	list-style: none;
-	background:transparent url(../images/icons/bullet_black.png) no-repeat scroll left 5px;
-	padding:4px 0 4px 20px;
-}
-ul.projects.root li.root{
-	background: none;
-}
-ul.projects li.child {
-	background-position: 0 4px;
-}
-#admin-menu li{
-	background: none;
-	padding: 4px 0;
-}
 .tabs ul li{ padding: 0; }
 .tabs ul li a{
 	-moz-border-radius-topleft:3px;
