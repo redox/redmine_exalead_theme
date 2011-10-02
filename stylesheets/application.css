@@ -12,8 +12,8 @@ body{
 	color: #555555;
 	min-width: 1200px;
 }
-#wrapper{
-	background: transparent;
+#wrapper2 {
+	position: relative;
 }
 
 a:hover { 
@@ -29,27 +29,33 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 	color: #999; 
 }
 
-#header{
-	background: #E1E1E1;
+#header {
+    background: #E1E1E1 url(../images/main_menu_bg.png) top right repeat-y;
 	font-size: 11px;
 	width: 210px !important;
-	height: auto !important;
 	float: left;
 	color: #606162;
 	padding: 0px;
 	padding-bottom: 40px;
+	height: auto;
 	min-height: 600px;
 }
 #header h1 {
+    background: #F2F3F2;
     font-size: 18px;
 	font-weight:bold;
-	padding: 0 !important;
-	margin: 0 !important;
-	margin-top: 10px !important;
-	padding-left: 10px !important;
+	padding: 0;
+	margin: 0;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #0062BC;
+	margin-right: 4px;
+	margin-left: 4px;
 }
 #header h1 a, #header h1 a:hover { 
-    color: #606162;
+	color: #0062BC;
     display: block;
     text-align: center;
 }
@@ -122,6 +128,7 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 #content {
 	border: 1px solid #CCCCCC;
 	border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px;
+	padding: 10px;
 	width: 100% !important;
 	float: left;
 }
@@ -135,7 +142,7 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 
 #sidebar {
     width: 180px !important;
-    background: #E1E1E1;
+    background: #E1E1E1 url(../images/sidebar_bg.png) top left repeat-y;
     margin-right: -230px;
     margin-top: -10px;
     padding-bottom: 40px;
@@ -153,7 +160,9 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 	color:#666666; 
 	font-size:9px; 
 	left: 255px;
-	padding: 0px
+	padding: 0px;
+	padding-top: 20px;
+	padding-bottom: 10px;
 }
 #footer a, #footer a:link, #footer a:visited { 
 	color: #0071BC 
@@ -168,12 +177,13 @@ a.issue.closed, a.issue.closed:link, a.issue.closed:visited{
 
 /* Headers */
 #content h2{
-	background: #DDDDDD url("../images/awesome-overlay-sprite.png") repeat-x scroll 0 -50px; 
+	background: url("../images/content_title_bg.png") top left repeat-x; 
 	border-bottom: 1px solid #CCCCCC;
-	color: #000;
-	font-size:17px;
-	margin:-5px -10px 10px;
-	padding: 10px 15px;
+	color: white;
+	padding: 0px;
+	padding-left: 10px;
+	font-size:14px;
+	line-height: 22px;
 }
 #content h2:first-child{
 	border-radius: 6px 6px 0 0;
@@ -229,11 +239,13 @@ h3, h4 {
 /* Menu */
 #main-menu { 
     left: 0px;
+    display: block;
     margin: 10px 0 0 0;
 	padding: 0;
 	position: relative;
 	width: auto;
 }
+
 #main-menu ul {
     margin: 0px !important;
     padding: 0px !important;
@@ -357,7 +369,10 @@ input#issue_subject { font-size: 200%; width: 90%; }
 textarea.wiki-edit { font-family: Arial, Verdana, Serif; font-size: larger; background:#FFFFFF;}
 
 /* Misc */
-.box { background-color: #F5FCFC; }
+.box {
+    background-color: white;
+    border-color: #72B9E8;
+}
 
 #content .splitcontentright .projects.box > ul{
 	margin-left: 0;
@@ -475,7 +490,7 @@ table.progress tr td.closed{
 	-o-border-radius: 5px 5px 0 0;
 	border-radius: 5px 5px 0 0;
 	background: #FFFFFF;
-	border: 1px solid #CCCCCC;
+	border: 1px solid #72B9E8;
 	border-bottom: none;
 	float: right;
 	font-family: verdana;
@@ -487,9 +502,10 @@ table.progress tr td.closed{
 }
 
 #content > .contextual > a, #content > .contextual > #watcher > a {
-	line-height: 35px; 
-	padding-top: 10px;
-	padding-bottom: 11px;
+	line-height: 22px; 
+	padding: 0px;
+	padding-left: 20px;
+	padding-right: 10px;
 }
 
 .contextual input[type='text']{ padding: inherit; margin: 0 }
@@ -718,21 +734,4 @@ input[type="submit"] { background-color: #015EA9 }
 
 /* Boxes */
 fieldset#filters, fieldset#date-range { background-color: #F5FCFC }
-.box { background-color:#F5FCFC; }
 
-
-/* == Colors change example == 
-
-a, a:link, a:visited { color: #cc0000 }
-#footer a, #footer a:link, #footer a:visited  { color: #cc0000 }
-
-#top-menu { background-color: #cc0000}
-
-#main-menu li a { background-color: #cc0000 }
-#main-menu li a:hover { background-color: #cc0000 }
-input[type="submit"] { background-color: #cc0000 }
-
-fieldset#filters, fieldset#date-range { background-color: #FCF5FC }
-.box { background-color:#FCF5FC; }
-
-*/
